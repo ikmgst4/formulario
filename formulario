@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎉 Formulário Divertido! 🎉</title>
-    <meta name="description" content="Participe do nosso curso de HTML & CSS online e grátis!">
+    <title>📝 Inscrição no Curso de HTML & CSS</title>
+    <meta name="description" content="Inscreva-se para nosso curso completo de HTML & CSS, online e grátis!">
 </head>
 <body>
 
-    <h1 style="color: #FF5733;">🌟 Bem-vindo ao site HTML Progressivo! 🌟</h1>
-    <h2 style="color: #4CAF50;">Preencha o formulário abaixo para participar do nosso curso incrível! 📚✨</h2><br />
+    <header>
+        <h1 style="color: #2E7D32;">🌟 Bem-vindo ao Curso de HTML & CSS! 🌟</h1>
+        <p style="font-size: 1.2em;">Preencha o formulário abaixo para se inscrever e comece sua jornada no desenvolvimento web!</p>
+        <hr>
+    </header>
 
     <form action="Script_do_Formulario.php" method="post">
 
         <!-- DADOS PESSOAIS -->
         <fieldset>
             <legend>📝 Dados Pessoais</legend>
+            <p>Por favor, forneça suas informações pessoais para podermos entrar em contato.</p>
             <table cellspacing="10">
                 <tr>
                     <td><label for="nome">Nome: </label></td>
-                    <td align="left"><input type="text" name="nome" required></td>
+                    <td><input type="text" name="nome" placeholder="Seu nome completo" required></td>
                 </tr>
                 <tr>
                     <td><label for="sobrenome">Sobrenome: </label></td>
-                    <td align="left"><input type="text" name="sobrenome" required></td>
+                    <td><input type="text" name="sobrenome" placeholder="Seu sobrenome" required></td>
                 </tr>
                 <tr>
                     <td><label>Nascimento: </label></td>
-                    <td align="left">
+                    <td>
                         <input type="text" name="dia" size="2" maxlength="2" placeholder="dd" required> /
                         <input type="text" name="mes" size="2" maxlength="2" placeholder="mm" required> /
                         <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa" required>
@@ -35,12 +39,12 @@
                 </tr>
                 <tr>
                     <td><label for="rg">RG: </label></td>
-                    <td align="left"><input type="text" name="rg" size="13" maxlength="13" required></td>
+                    <td><input type="text" name="rg" size="13" maxlength="13" placeholder="Seu RG" required></td>
                 </tr>
                 <tr>
                     <td><label>CPF:</label></td>
-                    <td align="left">
-                        <input type="text" name="cpf" size="9" maxlength="9" required> - 
+                    <td>
+                        <input type="text" name="cpf" size="9" maxlength="9" placeholder="000.000.000-00" required> - 
                         <input type="text" name="cpf2" size="2" maxlength="2" required>
                     </td>
                 </tr>
@@ -51,20 +55,21 @@
         <!-- ENDEREÇO -->
         <fieldset>
             <legend>🏡 Dados de Endereço</legend>
+            <p>Forneça seu endereço completo para futuras comunicações.</p>
             <table cellspacing="10">
                 <tr>
                     <td><label for="rua">Rua:</label></td>
-                    <td align="left"><input type="text" name="rua" required></td>
+                    <td><input type="text" name="rua" placeholder="Nome da rua" required></td>
                     <td><label for="numero">Número:</label></td>
-                    <td align="left"><input type="text" name="numero" size="4" required></td>
+                    <td><input type="text" name="numero" size="4" placeholder="Número da casa" required></td>
                 </tr>
                 <tr>
                     <td><label for="bairro">Bairro: </label></td>
-                    <td align="left"><input type="text" name="bairro" required></td>
+                    <td><input type="text" name="bairro" placeholder="Seu bairro" required></td>
                 </tr>
                 <tr>
                     <td><label for="estado">Estado:</label></td>
-                    <td align="left">
+                    <td>
                         <select name="estado" required>
                             <option value="">Escolha...</option>
                             <option value="ac">Acre</option>
@@ -76,12 +81,12 @@
                 </tr>
                 <tr>
                     <td><label for="cidade">Cidade: </label></td>
-                    <td align="left"><input type="text" name="cidade" required></td>
+                    <td><input type="text" name="cidade" placeholder="Nome da cidade" required></td>
                 </tr>
                 <tr>
                     <td><label for="cep">CEP: </label></td>
-                    <td align="left">
-                        <input type="text" name="cep" size="5" maxlength="5" required> - 
+                    <td>
+                        <input type="text" name="cep" size="5" maxlength="5" placeholder="00000-000" required> - 
                         <input type="text" name="cep2" size="3" maxlength="3" required>
                     </td>
                 </tr>
@@ -92,10 +97,11 @@
         <!-- DADOS DE LOGIN -->
         <fieldset>
             <legend>🔒 Dados de Login</legend>
+            <p>Crie suas credenciais de acesso para o curso.</p>
             <table cellspacing="10">
                 <tr>
                     <td><label for="email">E-mail: </label></td>
-                    <td align="left"><input type="email" name="email" required></td>
+                    <td><input type="email" name="email" placeholder="seuemail@exemplo.com" required></td>
                 </tr>
                 <tr>
                     <td><label for="imagem">Imagem de perfil:</label></td>
@@ -103,22 +109,25 @@
                 </tr>
                 <tr>
                     <td><label for="login">Login de usuário: </label></td>
-                    <td align="left"><input type="text" name="login" required></td>
+                    <td><input type="text" name="login" placeholder="Escolha um login" required></td>
                 </tr>
                 <tr>
                     <td><label for="pass">Senha: </label></td>
-                    <td align="left"><input type="password" name="pass" required></td>
+                    <td><input type="password" name="pass" placeholder="Crie uma senha" required></td>
                 </tr>
                 <tr>
                     <td><label for="passconfirm">Confirme a senha: </label></td>
-                    <td align="left"><input type="password" name="passconfirm" required></td>
+                    <td><input type="password" name="passconfirm" placeholder="Repita a senha" required></td>
                 </tr>
             </table>
         </fieldset>
 
         <br />
-        <input type="submit" value="💻 Enviar">
-        <input type="reset" value="🗑️ Limpar">
+        <footer>
+            <input type="submit" value="✅ Inscrever-se">
+            <input type="reset" value="🗑️ Limpar">
+            <p style="font-size: 0.9em; color: #757575;">* Todos os campos são obrigatórios.</p>
+        </footer>
     </form>
 
 </body>
